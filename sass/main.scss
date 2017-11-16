@@ -1,0 +1,97 @@
+@import "libs/reset";
+
+body {
+  font-family: 'Nobile', sans-serif;
+
+  @media(max-width: 1135px){
+	   background: url(../media/bike-background.jpg) center center no-repeat fixed; 
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   -o-background-size: cover;
+	   background-size: cover;
+	}
+}
+
+nav {
+	margin: 0 auto;
+	z-index: 1;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+
+	ul{
+		display: inline-block;
+	}
+
+	li{
+		display: inline-block;
+		padding: 10px;
+		a{
+			padding: 0 10px;
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}
+
+video {
+  	position: absolute;
+  	width: 100%;
+  	top:0;
+  	left:0;
+  	right: 0;
+  	bottom: 0;
+  	z-index: 1;
+
+  	@media(max-width: 1135px){
+ 		display: none;
+	}
+
+}
+
+.overlay-desc {
+  	background: transparent;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	text-align: center;
+  	z-index: 2;
+}
+
+h1 {
+ 	color: white;
+    font-family: 'Nobile', sans-serif;
+    font-size: 3.8em;
+    text-align: center;
+    margin-top: 80px;
+
+    @media(max-width: 991px){
+ 		font-size: 3.0em;
+	}
+
+
+}
+
+.pic{
+	width: 160px;
+    margin-top: 60px;
+
+    @media(max-width: 540px){
+ 		width: 120px;
+	}
+}
+
+p {
+	color: white;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	text-align: center;
+	margin-top: 80px;
+
+
+  	@media(max-width: 540px){
+ 		font-size: 0.9em;
+	}
+}
